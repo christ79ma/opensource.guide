@@ -37,7 +37,7 @@ Before we get started, here are a few things we expect from you (and that you sh
 
 ## How to contribute
 
-If you'd like to contribute, start by searching through the [issues](https://github.com/github/opensource.guide/issues) and [pull requests](https://github.com/github/opensource.guide/pulls) to see whether someone else has raised a similar idea or question.
+If you'd like to contribute, start by searching through the [pull requests](https://github.com/github/opensource.guide/pulls) to see whether someone else has raised a similar idea or question.
 
 If you don't see your idea listed, and you think it fits into the goals of this guide, open a pull request.
 
@@ -47,12 +47,23 @@ If you're writing content, see the [style guide](./docs/styleguide.md) to help y
 
 ## Setting up your environment
 
-This site is powered by [Jekyll](https://jekyllrb.com/). Running it on your local machine requires a working [Ruby](https://www.ruby-lang.org/en/) installation with [Bundler](https://bundler.io/).
+This site is powered by [Jekyll](https://jekyllrb.com/). Running it on your local machine requires a working [Ruby](https://www.ruby-lang.org/en/) installation with [Bundler](https://bundler.io/) along with [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-Once you have that set up, run:
+Once you have that set up:
 
-    script/bootstrap
-    script/server
+1. Grant execution permissions to the scripts:
+
+```bash
+chmod +x script/bootstrap
+chmod +x script/server
+```
+
+2. Execute the scripts:
+
+```bash
+./script/bootstrap
+./script/server
+```
 
 …and open <http://localhost:4000> in your web browser.
 
